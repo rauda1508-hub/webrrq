@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Graphic Design Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "surface-container-high": "#e8e8e8",
+                        "error": "#ba1a1a",
+                        "surface-tint": "#c00100",
+                        "on-primary": "#ffffff",
+                        "inverse-on-surface": "#f1f1f1",
+                        "surface-container-low": "#f3f3f3",
+                        "error-container": "#ffdad6",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed-variant": "#584400",
+                        "outline-variant": "#cfc4c5",
+                        "on-primary-fixed-variant": "#930100",
+                        "secondary": "#745b00",
+                        "surface-container-highest": "#e2e2e2",
+                        "secondary-fixed": "#ffe08d",
+                        "on-tertiary": "#ffffff",
+                        "on-surface": "#1b1b1b",
+                        "tertiary-fixed": "#e2e2e2",
+                        "tertiary-fixed-dim": "#c6c6c6",
+                        "surface": "#f9f9f9",
+                        "tertiary-container": "#1b1b1b",
+                        "primary-fixed": "#ffdad4",
+                        "on-primary-fixed": "#410000",
+                        "primary-fixed-dim": "#ffb4a8",
+                        "primary": "#000000",
+                        "secondary-fixed-dim": "#f2c000",
+                        "on-secondary-fixed": "#241a00",
+                        "surface-variant": "#e2e2e2",
+                        "tertiary": "#000000",
+                        "on-secondary-container": "#6f5700",
+                        "secondary-container": "#ffcb05",
+                        "on-tertiary-fixed-variant": "#474747",
+                        "inverse-surface": "#303030",
+                        "on-tertiary-fixed": "#1b1b1b",
+                        "on-tertiary-container": "#848484",
+                        "surface-container": "#eeeeee",
+                        "surface-dim": "#dadada",
+                        "outline": "#7e7576",
+                        "on-error-container": "#93000a",
+                        "on-surface-variant": "#4c4546",
+                        "surface-bright": "#f9f9f9",
+                        "on-primary-container": "#ff291a",
+                        "on-background": "#1b1b1b",
+                        "primary-container": "#410000",
+                        "inverse-primary": "#ffb4a8",
+                        "background": "#f9f9f9"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "md": "16px",
+                        "xs": "4px",
+                        "xl": "32px",
+                        "lg": "24px",
+                        "base": "8px",
+                        "sm": "8px",
+                        "margin": "24px",
+                        "gutter": "16px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "label-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.5px", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-lg text-body-lg">
+<!-- TopNavBar Component -->
+<header class="bg-surface dark:bg-surface-container-lowest text-primary dark:text-primary-fixed-dim border-b-2 border-primary dark:border-outline-variant w-full sticky top-0 z-50">
+<div class="flex justify-between items-center w-full px-margin py-md max-w-7xl mx-auto">
+<div class="text-headline-md font-headline-md font-black tracking-tighter text-primary dark:text-on-surface">
+                DESIGN PORTFOLIO
+            </div>
+<nav class="hidden md:flex gap-lg items-center">
+<a class="text-on-primary-container dark:text-primary-fixed border-b-2 border-on-primary-container pb-1 font-bold text-label-md font-label-md hover:text-on-primary-container dark:hover:text-primary-fixed transition-colors duration-200" href="#">Home</a>
+<a class="text-on-surface font-medium text-label-md font-label-md hover:text-on-primary-container dark:hover:text-primary-fixed transition-colors duration-200" href="#">Work</a>
+<a class="text-on-surface font-medium text-label-md font-label-md hover:text-on-primary-container dark:hover:text-primary-fixed transition-colors duration-200" href="#">About</a>
+<a class="text-on-surface font-medium text-label-md font-label-md hover:text-on-primary-container dark:hover:text-primary-fixed transition-colors duration-200" href="#">Contact</a>
+</nav>
+<button class="bg-[#ff0000] text-white px-md py-base rounded hover:opacity-90 transition-opacity font-bold text-label-md font-label-md hidden md:block">
+                Hire Me
+            </button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="flex-grow flex flex-col">
+<!-- Hero Section -->
+<section class="w-full max-w-7xl mx-auto px-margin py-xl md:py-[120px] flex flex-col gap-lg items-start justify-center">
+<h1 class="text-[64px] leading-[1.1] md:text-[96px] font-black tracking-tighter text-primary uppercase max-w-4xl">
+                RRQ EVOS SAHABATAN
+            </h1>
+<p class="text-headline-md font-headline-md text-on-surface-variant max-w-2xl font-light">
+                Minimalist, high-impact design solutions for modern brands. We strip away the noise to reveal the core essence of your visual communication.
+            </p>
+<div class="flex gap-md mt-md">
+<button class="bg-[#ff0000] text-white px-lg py-md rounded font-bold text-body-lg border-2 border-[#ff0000] hover:bg-transparent hover:text-[#ff0000] transition-colors">
+                    View Projects
+                </button>
+<button class="bg-transparent text-primary px-lg py-md rounded font-bold text-body-lg border-2 border-primary hover:bg-primary hover:text-white transition-colors">
+                    Our Process
+                </button>
+</div>
+</section>
+<!-- Featured Works Section -->
+<section class="w-full max-w-7xl mx-auto px-margin py-xl flex flex-col gap-xl">
+<div class="flex justify-between items-end border-b-2 border-primary pb-md">
+<h2 class="text-headline-lg font-headline-lg text-primary uppercase">Selected Works</h2>
+<a class="text-label-md font-label-md font-bold text-[#ff0000] flex items-center gap-xs hover:underline" href="#">
+                    ALL PROJECTS <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Project 1 -->
+<article class="flex flex-col gap-base group cursor-pointer">
+<div class="w-full aspect-[4/3] bg-surface-container-highest border border-outline-variant rounded-lg overflow-hidden relative">
+<img alt="Abstract branding mockup" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-100 group-hover:scale-105" data-alt="A stark, minimalist branding mockup featuring bold typography on crisp white stationery, placed on a deep black surface. Dramatic, high-contrast lighting creates sharp shadows, emphasizing the clean lines and geometric layout. Subtle accents of vibrant red add a striking visual anchor to the composition, embodying a premium, high-end design aesthetic." src="https://mms.img.susercontent.com/id-11134216-7rasd-m3niecs4wrnz4b"/>
+<div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors"></div>
+</div>
+<div class="flex justify-between items-start mt-sm">
+<div>
+<h3 class="text-headline-md font-headline-md text-primary group-hover:text-[#ff0000] transition-colors">Desain Grafis</h3>
+<p class="text-body-lg font-body-lg text-on-surface-variant">Brand Identity / Typography</p>
+</div>
+<span class="bg-secondary-container text-on-secondary-container px-sm py-xs rounded text-label-md font-label-md font-bold">2026
+</span>
+</div>
+</article>
+<!-- Project 2 -->
+<article class="flex flex-col gap-base group cursor-pointer mt-0 md:mt-xl">
+<div class="w-full aspect-[4/3] bg-surface-container-highest border border-outline-variant rounded-lg overflow-hidden relative">
+<img alt="Editorial design layout" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-100 group-hover:scale-105" data-alt="A close-up shot of a modern editorial magazine spread. The layout features stark, heavy black typography against pure white paper, demonstrating a rigid grid system. A single, large geometric shape in vivid red disrupts the structured text, providing a focal point. The lighting is bright and even, highlighting the texture of the premium matte paper." src="https://cdn.phototourl.com/free/2026-05-13-3573bd33-c5e6-4ba1-8767-e555f1cc036b.jpg"/>
+<div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors"></div>
+</div>
+<div class="flex justify-between items-start mt-sm">
+<div>
+<h3 class="text-headline-md font-headline-md text-primary group-hover:text-[#ff0000] transition-colors">Ade Sawaya</h3>
+<p class="text-body-lg font-body-lg text-on-surface-variant">Print / Layout Design</p>
+</div>
+<span class="bg-secondary-container text-on-secondary-container px-sm py-xs rounded text-label-md font-label-md font-bold">2023</span>
+</div>
+</article>
+<!-- Project 3 -->
+<article class="flex flex-col gap-base group cursor-pointer">
+<div class="w-full aspect-[4/3] bg-surface-container-highest border border-outline-variant rounded-lg overflow-hidden relative">
+<img alt="Packaging design" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-100 group-hover:scale-105" data-alt="Premium cosmetic packaging design showcased on a solid white pedestal against a pitch-black background. The primary bottle is matte black with subtle glossy black debossed typography. A secondary accent box features a bold, solid red finish. The lighting is dramatic and directional, creating stark contrasts that emphasize the sleek, modern forms of the products." src="pt/a.JPG"/>
+<div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors"></div>
+</div>
+<div class="flex justify-between items-start mt-sm">
+<div>
+<h3 class="text-headline-md font-headline-md text-primary group-hover:text-[#ff0000] transition-colors">Aura Packaging</h3>
+<p class="text-body-lg font-body-lg text-on-surface-variant">Packaging / 3D Visualization</p>
+</div>
+<span class="bg-secondary-container text-on-secondary-container px-sm py-xs rounded text-label-md font-label-md font-bold">2023</span>
+</div>
+</article>
+<!-- Project 4 -->
+<article class="flex flex-col gap-base group cursor-pointer mt-0 md:mt-xl">
+<div class="w-full aspect-[4/3] bg-surface-container-highest border border-outline-variant rounded-lg overflow-hidden relative">
+<img alt="Digital interface design" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-100 group-hover:scale-105" data-alt="A sleek digital interface displayed on a high-resolution screen in a dark studio setting. The UI design is starkly minimalist, utilizing thick black lines, large utilitarian typography, and expansive white space. A single floating action button in bright, urgent red provides the only color in the scene. The overall aesthetic is professional, sharp, and highly functional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWZlxEOZxlF0RkpyE415oD4GuQhgY1kXk_T1LqJYS_qm-z97jwIt5GzPpXmI4Gdd0SwgoJEJplSPhDdAAxSSYN05lt9Sp4U7yqGcR2N5NBgTPC1smvQMgIX0oese4aZFcTSWiOequgpDJ_NK3w1_XYxvfx8snX92-N7Q8CjZ4oo7kqMhZrjz-cRsRa3NtJ7lKYDpCKHpawzZvVYmuSlNjcJUGecqvZuDN_Wpg4_wsqAyUVxjMYyOdUSf-G0GxJDoUwHQsz6lg4qA"/>
+<div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors"></div>
+</div>
+<div class="flex justify-between items-start mt-sm">
+<div>
+<h3 class="text-headline-md font-headline-md text-primary group-hover:text-[#ff0000] transition-colors">System UI</h3>
+<p class="text-body-lg font-body-lg text-on-surface-variant">Digital / Web App</p>
+</div>
+<span class="bg-secondary-container text-on-secondary-container px-sm py-xs rounded text-label-md font-label-md font-bold">2024</span>
+</div>
+</article>
+</div>
+</section>
+<!-- Call to Action Banner -->
+<section class="w-full bg-primary text-white py-xl mt-xl">
+<div class="max-w-7xl mx-auto px-margin flex flex-col md:flex-row justify-between items-center gap-lg">
+<h2 class="text-headline-lg font-headline-lg font-bold max-w-lg leading-tight">READY TO ELEVATE YOUR BRAND'S VISUAL PRESENCE?</h2>
+<button class="bg-[#ff0000] text-white px-xl py-lg rounded font-bold text-headline-md hover:bg-white hover:text-primary transition-colors whitespace-nowrap">
+                    Let's Talk
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer Component -->
+<footer class="bg-primary dark:bg-surface-container-highest text-on-primary dark:text-on-surface border-t-4 border-secondary-container w-full mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-margin py-xl gap-gutter max-w-7xl mx-auto">
+<div class="text-headline-sm font-headline-lg font-bold text-secondary-container">
+                DESIGN PORTFOLIO
+            </div>
+<div class="flex gap-lg">
+<a class="text-label-md font-label-md text-surface-variant opacity-80 hover:text-secondary-container hover:opacity-100 transition-opacity hover:translate-y-[-2px] transition-transform" href="#">Behance</a>
+<a class="text-label-md font-label-md text-surface-variant opacity-80 hover:text-secondary-container hover:opacity-100 transition-opacity hover:translate-y-[-2px] transition-transform" href="#">Dribbble</a>
+<a class="text-label-md font-label-md text-surface-variant opacity-80 hover:text-secondary-container hover:opacity-100 transition-opacity hover:translate-y-[-2px] transition-transform" href="#">Instagram</a>
+<a class="text-label-md font-label-md text-surface-variant opacity-80 hover:text-secondary-container hover:opacity-100 transition-opacity hover:translate-y-[-2px] transition-transform" href="#">LinkedIn</a>
+</div>
+<div class="text-body-lg font-body-lg text-surface-variant opacity-80">
+                © 2024 Portfolio. Crafted with Precision.
+            </div>
+</div>
+</footer>
+</body></html>
